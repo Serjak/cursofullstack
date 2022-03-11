@@ -8,7 +8,7 @@ function signUp(req, res) {
 
 	user.name = name;
 	user.lastname = lastname;
-	user.email = email;
+	user.email = email.toLowerCase();
 	user.role = "admin";
 	user.active = false;
 	user.password = password;
